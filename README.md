@@ -16,12 +16,39 @@ Pao Pao Training Mode is a tool on top of Fightcade witch gives you Dummy contro
 ### Instructions ###
 1. Click on **Clone or Download** and **Download ZIP**
 2. Run run_input_viewer.bat and test your controller inputs
-3. Report your controller inputs in input_map.ini **player 2 and "Stop" inputs must be letters (ex: Z for Up input)**
+3. Report your controller inputs in input_map.ini **player 2 and "Stop" inputs must be keyboard letters (ex: Z for Up input)**
 
 ### Usage ###
 1. Run offline fightcade emulator, garou (in mvs only, press START+A+B+C in game to open unibios menu) and enable infinite power, infinite life and infinite time
 2. Chose P1 and P2 characters
 3. run run_pao_pao_training.bat and start training
+
+### Recording ###
+0. **Do not forget to remove the default emulator input shortcuts (ABC/BCD/ABCD are by default mapped to respectively a/s/d keys)**
+1. Press your p1-dummy button to enable p2 controls
+2. Press your record button to start recording
+3. Input what you want p2 to do
+4. Press your stop keyboard letter
+5. Press your p1-dummy button again to disable p2 controls
+6. Press your play button to start the recorded replay
+
+### Multiple slots and random replay ###
+You can change record slots with the next_record and prev_record buttons (defaulted to start and select)
+To record different inputs on the different slots, proceed as follows :
+1. Press your p1-dummy button to enable p2 controls
+2. Press your record button to start recording
+3. Input what you want p2 to do
+4. Press your stop keyboard letter
+5. Press either your next_record button or prev_record button to change slots
+6. Repeat steps 2/3/4
+7. You can repeat step 5 and 6 to record yet another slot
+8. Finally press your random_play button to pick and play one of your random slots
+
+Note that you can still play the currently selected slot with the play button, and change slots with next_record and prev_record to just go through your recordings.
+
+Last thing to note, the number of slots is currently fixed at 3. If you want to change it, simply open the pao_pao_training.py file, and look for the line :
+```TOTAL_SLOTS = 3```
+Then just change the number if you want a different amount of slots. Save the file and launch run_pao_pao_training.bat
 
 ### input_map.ini ###
 ```
