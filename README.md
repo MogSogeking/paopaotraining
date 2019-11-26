@@ -11,6 +11,7 @@ Pao Pao Training Mode is a tool on top of Fightcade witch gives you Dummy contro
 ### Features ###
 * Dummy control
 * Record and play p2 inputs
+* Record on multiple slots and replay a random slot
 
 ### Instructions ###
 1. Click on **Clone or Download** and **Download ZIP**
@@ -49,6 +50,9 @@ p2-d = l
 record = BTN_TL
 stop = a # only keyboard letter working
 play = ABS_Z
+next_record = BTN_START
+prev_record = BTN_SELECT
+random_play = ABS_RZ
 ```
 
 ### NOTE: ###
